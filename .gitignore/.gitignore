@@ -1,0 +1,10 @@
+from datetime import date
+atual = date.today().year
+sal = 1000
+perc = 1.5
+nsal = sal + (sal * (perc / 100))
+for c in range(2007, atual):
+    perc = perc *2
+    nsal = nsal + (nsal * (perc / 100))
+
+print('{:.2f}'.format(nsal))
