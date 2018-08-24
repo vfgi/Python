@@ -1,0 +1,30 @@
+class Retangulo:
+
+    def __init__(self, ladoa, ladob):
+        self.setBase(ladoa)
+        self.setAltura(ladob)
+
+    def setBase(self, ladoa):
+        self.ladoa = ladoa
+
+    def getBase(self):
+        return self.ladoa
+
+    def setAltura(self, ladob):
+        self.ladob = ladob
+
+    def getAltura(self):
+        return self.ladob
+
+    def calculaArea(self):
+        return self.ladoa * self.ladob
+
+    def calculaPerimetro(self):
+        return 2 * self.ladoa + 2 * self.ladob
+
+
+ladoa = int(input('Informe o valor da base: '))
+ladob = int(input('Informe o valor da altura: '))
+retangulo = Retangulo(ladoa, ladob)
+print('A area do retangulo é: {}'.format(retangulo.calculaArea()))
+print('O perimetro do retangulo é: {}'.format(retangulo.calculaPerimetro()))
