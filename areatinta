@@ -1,0 +1,11 @@
+mquad = int(input('Qual a área a ser coberta em m²: '))
+litros = mquad / 3
+
+if mquad % 54 == 0:
+	latas = mquad / 54
+else:
+	latas = int(mquad / 54) + 1
+
+preco = latas * 80
+print ('{} latas'.format(latas))
+print ('R$ {:.2f}'.format(preco))
