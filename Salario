@@ -1,0 +1,7 @@
+hora = float(input('Horas trabalhadas: '))
+sal = float(input('Salário minimo: '))
+
+hora2 = (sal / 100) * 10
+salbrut = hora2 * hora
+
+print('O valor a receber será de R$ {:.2f}'.format(salbrut-((salbrut/100)*3)))
